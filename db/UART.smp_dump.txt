@@ -1,0 +1,16 @@
+
+State Machine - |UART|Uart_Tx:Tx|r_tx_status
+Name r_tx_status.tx_stop r_tx_status.tx_send r_tx_status.tx_start r_tx_status.000 r_tx_status.tx_end 
+r_tx_status.000 0 0 0 0 0 
+r_tx_status.tx_start 0 0 1 1 0 
+r_tx_status.tx_send 0 1 0 1 0 
+r_tx_status.tx_stop 1 0 0 1 0 
+r_tx_status.tx_end 0 0 0 1 1 
+
+State Machine - |UART|Uart_Rx:Rx|r_rx_status
+Name r_rx_status.rx_stop r_rx_status.rx_data r_rx_status.rx_start r_rx_status.000 r_rx_status.rx_end 
+r_rx_status.000 0 0 0 0 0 
+r_rx_status.rx_start 0 0 1 1 0 
+r_rx_status.rx_data 0 1 0 1 0 
+r_rx_status.rx_stop 1 0 0 1 0 
+r_rx_status.rx_end 0 0 0 1 1 
